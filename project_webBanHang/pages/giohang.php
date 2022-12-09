@@ -11,7 +11,7 @@ if (isset($_SESSION['cart'])) {
     // echo "<pre>";
 }
 ?>
-<div class="container">
+<div class="container col_clearfix">
     <!-- Responsive Arrow Progress Bar -->
     <div class="arrow-steps clearfix">
         <div class="step current"> <span> <a href="index.php?quanly=giohang">Giỏ hàng</a></span> </div>
@@ -32,7 +32,7 @@ if (isset($_SESSION['cart'])) {
             <th>tên sản phẩm</th>
             <th>Hình ảnh</th>
             <th>Số lượng</th>
-            <th>Giá sản phẩm</th>
+            <th class="gsp">Giá sản phẩm</th>
             <th>Thành tiền</th>
             <th>Quản lý</th>
         </tr>
@@ -56,7 +56,7 @@ if (isset($_SESSION['cart'])) {
                         <?php echo $cart_item['soluong'] ?>
                         <a href="pages/themgiohang.php?tru=<?php echo $cart_item['id']; ?>"><i style="color: black;" class="fa-solid fa-minus"></i></a>
                     </td>
-                    <td><?php echo number_format($cart_item['price']) . 'VND' ?></td>
+                    <td class="gsp"><?php echo number_format($cart_item['price']) . 'VND' ?></td>
                     <td><?php echo number_format($thanhtien) . 'VND' ?></td>
                     <td><a onclick="return Del('<?php echo $cart_item['name']; ?>')" style="text-decoration: none;" href="pages/themgiohang.php?xoa=<?php echo $cart_item['id']; ?>"><i style="color: black;font-size: 30px;" class="fa-solid fa-trash-can"></i></a></td>
                 </tr>
@@ -64,13 +64,13 @@ if (isset($_SESSION['cart'])) {
             }
             ?>
             <tr>
-                <th style="text-align: right;" colspan="8">Tổng tiền : <?php echo number_format($tongtien) . 'VND' ?></th>
+                <th class="ttbtmb" colspan="8">Tổng tiền : <?php echo number_format($tongtien) . 'VND' ?></th>
 
             </tr>
             <?php
             if (isset($_SESSION['login1'])) { ?>
                 <tr>
-                    <th style="text-align: right;" colspan="8"><button class="btn btn-primary"><a href="index.php?quanly=vanchuyen" style="text-decoration: none;color: black;">Vận chuyển</a></button></th>
+                    <th colspan="8"><button class="btn btn-primary ttbtmb"><a href="index.php?quanly=vanchuyen" style="text-decoration: none;color: black;">Vận chuyển</a></button></th>
                 </tr>
             <?php
             } else {
@@ -82,7 +82,7 @@ if (isset($_SESSION['cart'])) {
             }
             ?>
             <tr>
-                <th style="text-align: right;" colspan="8"><a href="pages/themgiohang.php?xoatatca=1 " style="text-decoration: none;color: black;">Xoá tất cả</a></th>
+                <th class="ttbtmb" colspan="8"><a href="pages/themgiohang.php?xoatatca=1 " style="text-decoration: none;color: black;">Xoá tất cả</a></th>
             </tr>
         <?php
         } else {

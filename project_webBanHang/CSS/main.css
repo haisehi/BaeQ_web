@@ -412,7 +412,8 @@ body {
 }
 /* Feature layout  */
 .feature-layout {
-    background-color: black;
+    margin-top: 100px;
+    background: #404c52;
     margin-top: 36px;
     display: flex;
     flex-direction: column;

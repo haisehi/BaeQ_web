@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container col_clearfix">
     <!-- Responsive Arrow Progress Bar -->
     <div class="arrow-steps clearfix">
         <div class="step done"> <span> <a href="index.php?quanly=giohang">Giỏ hàng</a></span> </div>
@@ -28,11 +28,11 @@ $sql_get_vanchuyen = mysqli_query($connect, "SELECT * FROM tbl_cart INNER JOIN s
             <table class="table">
                 <thead class="bg-dark text-light">
                     <tr>
-                        <th>#</th>
-                        <th>Tên khách hàng</th>
+                        <th class="gsp">#</th>
+                        <th class="gsp">Tên khách hàng</th>
                         <th>ngày mua hàng</th>
-                        <th>Địa chỉ</th>
-                        <th>Số điện thoại</th>
+                        <th class="gsp">Địa chỉ</th>
+                        <th class="gsp">Số điện thoại</th>
                         <th>Phương thức thanh toán</th>
                         <th>Mã đơn hàng</th>
                         <th>Đơn hàng</th>
@@ -43,11 +43,11 @@ $sql_get_vanchuyen = mysqli_query($connect, "SELECT * FROM tbl_cart INNER JOIN s
                     $i = 1;
                     while ($row = mysqli_fetch_assoc($sql_get_vanchuyen)) { ?>
                         <tr>
-                            <td><?php echo $i++ ?></td>
-                            <td><?php echo $row['name_khachhang'] ?></td>
+                            <td class="gsp"><?php echo $i++ ?></td>
+                            <td class="gsp"><?php echo $row['name_khachhang'] ?></td>
                             <td><?php echo $row['date'] ?></td>
-                            <td><?php echo $row['address'] ?></td>
-                            <td><?php echo $row['phone'] ?></td>
+                            <td class="gsp"><?php echo $row['address'] ?></td>
+                            <td class="gsp"><?php echo $row['phone'] ?></td>
                             <td><?php echo $row['payment'] ?></td>
                             <td><?php echo $row['code_cart'] ?></td>
                             <td><a style="text-decoration: none;" href="index.php?quanly=lichsu&code_cart=<?php echo $row['code_cart']; ?>">xem</a></td>

@@ -157,7 +157,7 @@ ul.product_list li {
 }
 .list_trang {
     list-style: none;
-    margin: 0 35%;
+    margin: 0 25%;
     padding: 0;
 }
 .list_trang li {
@@ -177,7 +177,7 @@ ul.product_list li {
     }
     ul.product_list li {
         /* clear: both; */
-        width: 46%;
+        width: 40%;
         float: left;
         height: 580px;
     }
@@ -475,4 +475,50 @@ ul#tabs-nav li:hover,
 /* Hình thức thanh toán */
 .col-md-4.hinhthucthanhtoan .form-check {
     margin: 11px;
+}
+.ttbtmb {
+    text-align: right;
+}
+@media only screen and (max-width: 767px) {
+    .tabs {
+        width: 100%;
+    }
+    .chitiet_sanpham {
+        width: 100%;
+    }
+    .hinhanh_sanpham {
+        height: 300px;
+        width: 200px;
+    }
+    .chitiet_name {
+        font-size: 20px;
+    }
+    .chitiet_nd_header {
+        font-size: 20px;
+    }
+    .chitiet_noidung {
+        font-size: 20px;
+    }
+    .chitiet_noidung {
+        font-size: 15px;
+    }
+    .chitiet_gia {
+        font-size: 30px;
+    }
+    .chitiet_noidung1 {
+        width: 100%;
+        font-size: 5px;
+    }
+    .col_clearfix {
+        display: none;
+    }
+    .gsp {
+        display: none;
+    }
+    .ttbtmb {
+        text-align: left;
+    }
+    .flexmoblile {
+        width: 100%;
+    }
 }

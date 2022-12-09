@@ -6,14 +6,14 @@ $query_lietke_dh = mysqli_query($connect, $sql_lietke_dh);
 ?>
 <table style="width: 100%;border-collapse: collapse;" border="1">
     <tr style="background-color: #bbc1bf;">
-        <th>ID</th>
-        <th>Mã đơn hàng</th>
+        <th class="gsp">ID</th>
+        <th class="gsp">Mã đơn hàng</th>
         <th>Ảnh</th>
         <th>Tên sản phẩm</th>
         <th>Kích thước</th>
         <th>Số lượng</th>
         <th>Đơn giá</th>
-        <th>Thành tiền</th>
+        <th class="gsp">Thành tiền</th>
     </tr>
     <?php
     $i = 0;
@@ -25,8 +25,8 @@ $query_lietke_dh = mysqli_query($connect, $sql_lietke_dh);
 
     ?>
         <tbody>
-            <td><?php echo $i ?></td>
-            <td><?php echo $row['code_cart'] ?></td>
+            <td class="gsp"><?php echo $i ?></td>
+            <td class="gsp"><?php echo $row['code_cart'] ?></td>
             <td>
                 <img src="admin/img/<?php echo $row['image'] ?>" alt="" width="100px" height="150px">
             </td>
@@ -34,7 +34,7 @@ $query_lietke_dh = mysqli_query($connect, $sql_lietke_dh);
             <td><?php echo $row['size'] ?></td>
             <td><?php echo $row['soluong'] ?></td>
             <td><?php echo number_format($row['price']) . 'VND' ?></td>
-            <td><?php echo number_format($money) . 'VND' ?></td>
+            <td class="gsp"><?php echo number_format($money) . 'VND' ?></td>
         </tbody>
         <td colspan="6">
             <p>Tổng tiền :<?php echo number_format($totalMoney) . 'VND' ?> </p>

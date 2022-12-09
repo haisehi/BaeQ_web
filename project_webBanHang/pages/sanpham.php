@@ -97,7 +97,7 @@ while ($row_sp = mysqli_fetch_array($query)) {
                 </div>
 
                 <h5 class="chitiet_nd_header">Thông tin thêm:</h5>
-                <p class="chitiet_noidung"> <?php echo $row_sp['synopsis']; ?></p><br>
+                <p class="chitiet_noidung1"> <?php echo $row_sp['synopsis']; ?></p><br>
                 <p class="chitiet_noidung">Mã sản phẩm : <?php echo $row_sp['product_id']; ?></p>
                 <p class="chitiet_gia"> <?php echo number_format($row_sp['price']) . "VND"; ?></p>
                 <button class="btn btn-success" name="themsp">Thêm vào giỏ hàng</button>
