@@ -49,7 +49,7 @@
                         <th>Hình ảnh</th>
                         <th>Số lượng</th>
                         <th>Giá sản phẩm</th>
-                        <th>Thành tiền</th>
+                        <th class="gsp">Thành tiền</th>
                     </tr>
                 </thead>
 
@@ -67,19 +67,19 @@
                                 <td><?php echo $cart_item['name'] ?></td>
                                 <td><img style="width: 70px; height:120px" src="admin/img/<?php echo $cart_item['image'] ?>" alt=""></td>
                                 <td>
-                                    <a href="pages/themgiohang.php?cong=<?php echo $cart_item['id']; ?>"><i style="color: black;" class="fa-solid fa-plus"></i></a>
+                                    <a class="gsp" href="pages/themgiohang.php?cong=<?php echo $cart_item['id']; ?>"><i style="color: black;" class="fa-solid fa-plus"></i></a>
                                     <?php echo $cart_item['soluong'] ?>
-                                    <a href="pages/themgiohang.php?tru=<?php echo $cart_item['id']; ?>"><i style="color: black;" class="fa-solid fa-minus"></i></a>
+                                    <a class="gsp" href="pages/themgiohang.php?tru=<?php echo $cart_item['id']; ?>"><i style="color: black;" class="fa-solid fa-minus"></i></a>
                                 </td>
                                 <td><?php echo number_format($cart_item['price']) . 'VND' ?></td>
-                                <td><?php echo number_format($thanhtien) . 'VND' ?></td>
+                                <td class="gsp"><?php echo number_format($thanhtien) . 'VND' ?></td>
 
                             </tr>
                         <?php
                         }
                         ?>
                         <tr>
-                            <th style="text-align: right;" colspan="8">Tổng tiền : <?php echo number_format($tongtien) . 'VND' ?></th>
+                            <th class="ttbtmb" colspan="8">Tổng tiền : <?php echo number_format($tongtien) . 'VND' ?></th>
 
                         </tr>
                     <?php
