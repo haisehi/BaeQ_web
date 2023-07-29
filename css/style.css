@@ -1,0 +1,529 @@
+/*II/ content trang chu */
+.content {
+    background-color: rgb(255, 255, 255);
+    height: 100%;
+}
+/* content 1 */
+.content_gender {
+    margin-top: 20px;
+    height: 750px;
+    width: 100%;
+    /* background-color: red; */
+}
+.content_gender1 {
+    height: auto;
+    width: 47%;
+    float: left;
+    margin: 0 1%;
+}
+
+.content_gender2 {
+    height: auto;
+    width: 47%;
+    float: right;
+    margin: 0 1%;
+}
+.content_gender1:hover {
+    width: 49%;
+}
+.content_gender2:hover {
+    width: 49%;
+}
+.header-content_gender {
+    text-align: center;
+    font-weight: 300;
+    font-size: large;
+    color: #201f2f;
+}
+/* content 2 mobile */
+.container {
+    margin: 25px 0;
+    padding: 0;
+}
+.bg_banner {
+    width: 100%;
+}
+/* content 2 */
+
+.slide-content {
+    height: 750px;
+    margin: 0 20px;
+}
+.slide-content-img {
+    height: 750px;
+    width: 100%;
+}
+
+/* content 3 */
+
+.content_video {
+    margin-top: 20px;
+    width: 100%;
+    height: 600px;
+    /* background-color: blue; */
+}
+.content_video_demo {
+    height: 100%;
+    width: 100%;
+}
+
+/* content mobile */
+@media (max-width: 1023px) {
+    .content_gender {
+        height: auto;
+    }
+    .slide-content {
+        display: none;
+    }
+    .content_video {
+        height: auto;
+    }
+    .container {
+        margin-top: auto;
+    }
+}
+
+/* conent san pham */
+#main {
+    height: auto;
+    width: 80%;
+    margin: 5px 10%;
+}
+ul.product_list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    width: 100%;
+    height: 500px;
+}
+ul.product_list li {
+    width: 23%;
+    height: 490px;
+    border: 1px solid black;
+    margin: 1%;
+    float: left;
+}
+.img_product {
+    height: 300px;
+    margin-bottom: 10px;
+    /* background-color: blue; */
+}
+.title_product {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+.price_product {
+    text-decoration: none;
+    color: rgb(217, 90, 90);
+    text-align: center;
+}
+
+/* chi tiet san pham */
+.chitiet {
+    margin: 5% 5% 5% 0;
+    padding: 0;
+    width: 100%;
+}
+.hinhanh_sanpham {
+    height: 500px;
+    width: 50%;
+    float: left;
+}
+.chitiet_sanpham {
+    height: 800px;
+    width: 35%;
+    float: left;
+    padding: 0;
+    /* margin: 5%; */
+}
+.chitiet_nd_header {
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.chitiet_name {
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.chitiet_noidung {
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(100, 97, 93);
+}
+.chitiet_gia {
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: red;
+}
+.list_trang {
+    list-style: none;
+    margin: 0 25%;
+    padding: 0;
+}
+.list_trang li {
+    float: left;
+    padding: 10px;
+    margin: 15px;
+    background-color: #96959c;
+    display: block;
+}
+@media only screen and (max-width: 767px) {
+    ul.product_list {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        width: 100%;
+        height: 500px;
+    }
+    ul.product_list li {
+        /* clear: both; */
+        width: 40%;
+        float: left;
+        height: 580px;
+    }
+}
+/* trang san pham */
+/* .listPage {
+    padding: 20px;
+    text-align: center;
+    list-style: none;
+}
+.listPage li {
+    background-color: #ffffffbd;
+    display: inline-block;
+    padding: 20px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+.listPage .active {
+    background-color: #b192ef;
+    color: #ffffff;
+} */
+/* Tabs */
+.tabs {
+    width: 60%;
+    float: left;
+    background-color: transparent;
+    border-radius: 5px 5px 5px 5px;
+}
+ul#tabs-nav {
+    list-style: none;
+    margin: 0;
+    /* padding: 5px; */
+    /* overflow: auto; */
+}
+ul#tabs-nav li {
+    float: left;
+    font-weight: bold;
+    margin-right: 2px;
+    padding: 8px 10px;
+    border-radius: 5px 5px 5px 5px;
+    /*border: 1px solid #d5d5de;
+    border-bottom: none;*/
+    cursor: pointer;
+}
+ul#tabs-nav li:hover,
+/* ul#tabs-nav li.active {
+    background-color: #08e;
+} */
+#tabs-nav li a {
+    text-decoration: none;
+    color: #fff;
+}
+.tab-content {
+    /* padding: 10px; */
+    /* border: 5px solid #09f; */
+    background-color: #fff;
+}
+
+/* Just for CodePen styling - don't include if you copy paste */
+/* jQuery Demo */
+
+.clearfix:after {
+    clear: both;
+    content: '';
+    display: block;
+    height: 0;
+}
+
+/* Responsive Arrow Progress Bar */
+
+.container {
+    font-family: 'Lato', sans-serif;
+}
+
+.arrow-steps .step {
+    font-size: 14px;
+    text-align: center;
+    color: #777;
+    cursor: default;
+    margin: 0 1px 0 0;
+    padding: 10px 0px 10px 0px;
+    width: 15%;
+    float: left;
+    position: relative;
+    background-color: #ddd;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.arrow-steps .step a {
+    color: #777;
+    text-decoration: none;
+}
+
+.arrow-steps .step:after,
+.arrow-steps .step:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -17px;
+    width: 0;
+    height: 0;
+    border-top: 19px solid transparent;
+    border-bottom: 17px solid transparent;
+    border-left: 17px solid #ddd;
+    z-index: 2;
+}
+
+.arrow-steps .step:before {
+    right: auto;
+    left: 0;
+    border-left: 17px solid #fff;
+    z-index: 0;
+}
+
+.arrow-steps .step:first-child:before {
+    border: none;
+}
+
+.arrow-steps .step:last-child:after {
+    border: none;
+}
+
+.arrow-steps .step:first-child {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.arrow-steps .step:last-child {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.arrow-steps .step span {
+    position: relative;
+}
+
+*.arrow-steps .step.done span:before {
+    opacity: 1;
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -10px;
+    font-size: 11px;
+    line-height: 21px;
+}
+
+.arrow-steps .step.current {
+    color: #fff;
+    background-color: #5599e5;
+}
+
+.arrow-steps .step.current a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.arrow-steps .step.current:after {
+    border-left: 17px solid #5599e5;
+}
+
+.arrow-steps .step.done {
+    color: #173352;
+    background-color: #2f69aa;
+}
+
+.arrow-steps .step.done a {
+    color: #173352;
+    text-decoration: none;
+}
+
+.arrow-steps .step.done:after {
+    border-left: 17px solid #2f69aa;
+}
+
+/* jQuery Demo */
+
+.clearfix:after {
+    clear: both;
+    content: '';
+    display: block;
+    height: 0;
+}
+
+/* Responsive Arrow Progress Bar */
+
+.container {
+    font-family: 'Lato', sans-serif;
+}
+
+.arrow-steps .step {
+    font-size: 14px;
+    text-align: center;
+    color: #777;
+    cursor: default;
+    margin: 0 1px 0 0;
+    padding: 10px 0px 10px 0px;
+    width: 15%;
+    float: left;
+    position: relative;
+    background-color: #ddd;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.arrow-steps .step a {
+    color: #777;
+    text-decoration: none;
+}
+
+.arrow-steps .step:after,
+.arrow-steps .step:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -17px;
+    width: 0;
+    height: 0;
+    border-top: 19px solid transparent;
+    border-bottom: 17px solid transparent;
+    border-left: 17px solid #ddd;
+    z-index: 2;
+}
+
+.arrow-steps .step:before {
+    right: auto;
+    left: 0;
+    border-left: 17px solid #fff;
+    z-index: 0;
+}
+
+.arrow-steps .step:first-child:before {
+    border: none;
+}
+
+.arrow-steps .step:last-child:after {
+    border: none;
+}
+
+.arrow-steps .step:first-child {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.arrow-steps .step:last-child {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.arrow-steps .step span {
+    position: relative;
+}
+
+*.arrow-steps .step.done span:before {
+    opacity: 1;
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -10px;
+    font-size: 11px;
+    line-height: 21px;
+}
+
+.arrow-steps .step.current {
+    color: #fff;
+    background-color: #5599e5;
+}
+
+.arrow-steps .step.current a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.arrow-steps .step.current:after {
+    border-left: 17px solid #5599e5;
+}
+
+.arrow-steps .step.done {
+    color: #173352;
+    background-color: #2f69aa;
+}
+
+.arrow-steps .step.done a {
+    color: #173352;
+    text-decoration: none;
+}
+
+.arrow-steps .step.done:after {
+    border-left: 17px solid #2f69aa;
+}
+/* Hình thức thanh toán */
+.col-md-4.hinhthucthanhtoan .form-check {
+    margin: 11px;
+}
+.ttbtmb {
+    text-align: right;
+}
+@media only screen and (max-width: 767px) {
+    .tabs {
+        width: 100%;
+    }
+    .chitiet_sanpham {
+        width: 100%;
+    }
+    .hinhanh_sanpham {
+        height: 300px;
+        width: 200px;
+    }
+    .chitiet_name {
+        font-size: 20px;
+    }
+    .chitiet_nd_header {
+        font-size: 20px;
+    }
+    .chitiet_noidung {
+        font-size: 20px;
+    }
+    .chitiet_noidung {
+        font-size: 15px;
+    }
+    .chitiet_gia {
+        font-size: 30px;
+    }
+    .chitiet_noidung1 {
+        width: 100%;
+        font-size: 5px;
+    }
+    .col_clearfix {
+        display: none;
+    }
+    .gsp {
+        display: none;
+    }
+    .ttbtmb {
+        text-align: left;
+    }
+    .flexmoblile {
+        width: 100%;
+    }
+    .chitiet_sanpham.chitiet_noidung1{
+        width: 100%;
+        font-size: 13px;
+    }
+}
